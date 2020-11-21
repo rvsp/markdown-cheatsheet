@@ -1,8 +1,7 @@
-Markdown Cheatsheet
+Markdown Cheatsheet<a name="TOP"></a>
 ===================
 
 - - - - 
-
 # Heading 1 #
 
     Markup :  # Heading 1 #
@@ -70,6 +69,34 @@ Content Cell  | Content Cell
 Content Cell  | Content Cell
 ```
 
+Adding a pipe `|` in a cell :
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | \|
+
+```
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  |  \| 
+```
+
+Left, right and center aligned table
+
+Left aligned Header | Right aligned Header | Center aligned Header
+| :--- | ---: | :---:
+Content Cell  | Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell
+
+```
+Left aligned Header | Right aligned Header | Center aligned Header
+| :--- | ---: | :---:
+Content Cell  | Content Cell | Content Cell
+Content Cell  | Content Cell | Content Cell
+```
+
 `code()`
 
     Markup :  `code()`
@@ -104,6 +131,13 @@ Content Cell  | Content Cell
               * Nested bullet
                   * Sub-nested bullet etc
           * Bullet list item 2
+
+-OR-
+
+ Markup : - Bullet list
+              - Nested bullet
+                  - Sub-nested bullet etc
+          - Bullet list item 2 
 ~~~
 
 1. A numbered list
@@ -126,6 +160,14 @@ Content Cell  | Content Cell
           - [x] A completed task
 ~~~
 
+- [ ] An uncompleted task
+    - [ ] A subtask
+
+~~~
+ Markup : - [ ] An uncompleted task
+              - [ ] A subtask
+~~~
+
 > Blockquote
 >> Nested blockquote
 
@@ -139,9 +181,9 @@ _Horizontal line :_
 
 _Image with alt :_
 
-![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
-    Markup : ![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
 Foldable text:
 
@@ -163,6 +205,13 @@ Foldable text:
 <h3>HTML</h3>
 <p> Some HTML code here </p>
 ```
+
+Link to a specific part of the page:
+
+[Go To TOP](#TOP)
+   
+    Markup : [text goes here](#section_name)
+              section_title<a name="section_name"></a>    
 
 Hotkey:
 
